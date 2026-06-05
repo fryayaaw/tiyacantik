@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Tamu Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buku Tamu Digital</h1>
+
+        <form id="wishbox-form">
+            <input type="text" id="name" placeholder="Nama Anda" required>
+            <textarea id="message" placeholder="Tulis harapan atau ucapan Anda di sini..." required></textarea>
+            <button type="submit">Kirim Ucapan</button>
+        </form>
+
+        <hr>
+
+        <h2>Ucapan Terbaru</h2>
+        <div id="wishbox-entries">
+            <!-- Ucapan akan dimuat di sini -->
+            <p>Memuat ucapan...</p>
+        </div>
+    </div>
+
+    <!-- Import Supabase client library -->
+    <script src="[cdn.jsdelivr.net](https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2)"></script>
+    <script src="script.js"></script>
+</body>
+</html>
